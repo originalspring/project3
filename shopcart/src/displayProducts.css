@@ -1,0 +1,20 @@
+.product {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1rem 4rem;
+    border: 0ch;
+  }
+  .product .displayQty {
+    margin-left: 3rem;
+    margin-bottom: 2.5rem;
+    text-align: center;
+  }
+  .product .displayQty span {
+    border: 3px solid lightgray;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+  }
+  
