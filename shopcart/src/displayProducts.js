@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { Modal } from "react-bootstrap";
-
+import { Button, Comment, Form, Header } from 'semantic-ui-react'
+import CommentExample  from "./Comments";
+// import Comments from "./CommentRecord";
 import { faPlusCircle, faMinusCircle } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -85,7 +87,28 @@ export default function DisplayProducts(props) {
                              <span className="text-dark">Ratings: </span>
                              {showImg.ratings}/5
                          </p>
-                     </Modal.Body>
+                         {/* <Comment>
+                            <Comment.Avatar src='https://react.semantic-ui.com/images/avatar/small/matt.jpg' />
+                            <Comment.Content>
+                                <Comment.Author as='a'>Matt</Comment.Author>
+                                <Comment.Metadata>
+                                <div>Today at 5:42PM</div>
+                                </Comment.Metadata>
+                                <Comment.Text>How artistic!</Comment.Text>
+                                <Comment.Actions>
+                                <Comment.Action>Reply</Comment.Action>
+                                </Comment.Actions>
+                            </Comment.Content>
+                            </Comment>
+                          <Form reply>
+      <Form.TextArea />
+      <Button content='Add Reply' labelPosition='left' icon='edit' primary />
+    </Form> */}         {/* <Comments></Comments>}*/}
+                         <CommentExample></CommentExample>
+
+                  
+
+                    </Modal.Body>
                  </Modal>
                  </>
                 );
